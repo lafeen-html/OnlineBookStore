@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>БукМаг</title>
+  <link type="image/x-icon" href="./img/favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- header section starts -->
+
+  <header class="header">
+    <div class="header-1">
+      <a href="#" class="logo"><i class="fas fa-book"></i> БукМаг</a>
+
+      <form action="" class="search-form">
+        <input type="search" name="" placeholder="Искать..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+    </div>
+
+    <div class="header-2">
+      <nav class="navbar">
+        <a href="#home">Домой</a>
+        <a href="#featured">Популярные</a>
+        <a href="#arrivals">Поступления</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#blogs">Блог</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- header section ends -->
+
+  <!-- bottom navbar -->
+
+  <nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#blogs" class="fas fa-blog"></a>
+  </nav>
+
+  <!-- login form -->
+
+  <div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="">
+      <h3>Авторизация</h3>
+      <span>Логин</span>
+      <input type="email" class="box" placeholder="Введите ваш email">
+      <span>Пароль</span>
+      <input type="password" class="box" placeholder="Введите ваш пароль">
+      <div class="checkbox">
+        <input type="checkbox" id="remember-me">
+        <label for="remember-me">Запомнить меня</label>
+      </div>
+      <input type="submit" value="Войти" class="btn">
+      <p>Забыли пароль? <a href="#">Нажмите здесь</a> </p>
+      <p>Ещё нет аккаунта? <a href="#">Зарегистрироваться</a> </p>
+    </form>
+  </div>
+
+  <!-- home section starts -->
+
+  <section class="home" id="home">
+
+    <div class="row">
+
+      <div class="content">
+        <h3>Большая распродажа!</h3>
+        <h4>Cкидки до -75%*</h4>
+        <p>*Только для авторизированных пользователей</p>
+        <a href="#" class="btn">Получить скидку</a>
+      </div>
+
+      <div class="swiper books-slider">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide"><img src="./img/book-1.png" alt="book-1"></a>
+          <a href="#" class="swiper-slide"><img src="./img/book-2.png" alt="book-2"></a>
+          <a href="#" class="swiper-slide"><img src="./img/book-3.png" alt="book-3"></a>
+          <a href="#" class="swiper-slide"><img src="./img/book-4.png" alt="book-4"></a>
+          <a href="#" class="swiper-slide"><img src="./img/book-5.png" alt="book-5"></a>
+          <a href="#" class="swiper-slide"><img src="./img/book-6.png" alt="book-6"></a>
+        </div>
+        <img src="./img/stand.png" alt="stand" class="stand">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- home section ends -->
+
+  <!-- icons section starts -->
+
+  <section class="icon-container">
+
+    <div class="icons">
+      <i class="fas fa-plane"></i>
+      <div class="content">
+        <h3>Бесплатная доставка</h3>
+        <p>На заказы свыше 3000 руб.</p>
+      </div>
+    </div>
+
+    <div class="icons">
+      <i class="fas fa-lock"></i>
+      <div class="content">
+        <h3>Безопасная оплата</h3>
+        <p>Надежная платежная система</p>
+      </div>
+    </div>
+
+    <div class="icons">
+      <i class="fas fa-redo-alt"></i>
+      <div class="content">
+        <h3>Удобный возврат</h3>
+        <p>14 дней на возврат</p>
+      </div>
+    </div>
+
+    <div class="icons">
+      <i class="fas fa-headset"></i>
+      <div class="content">
+        <h3>Поддержка 24/7</h3>
+        <p>Свяжитесь с нами в любое время</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- icons section ends -->
+
+  <!-- featured section starts -->
+
+  <section class="featured" id="featured">
+
+    <h1 class="heading"><span>Популярные книги</span></h1>
+
+    <div class="swiper featured-slider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./img/book-1.png" alt="book-1">
+          </div>
+          <div class="content">
+            <h3>Популярные книги</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <a href="#" class="btn">В корзину</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./img/book-2.png" alt="book-2">
+          </div>
+          <div class="content">
+            <h3>Популярные книги</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <a href="#" class="btn">В корзину</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./img/book-3.png" alt="book-3">
+          </div>
+          <div class="content">
+            <h3>Популярные книги</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <a href="#" class="btn">В корзину</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./img/book-4.png" alt="book-4">
+          </div>
+          <div class="content">
+            <h3>Популярные книги</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <a href="#" class="btn">В корзину</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./img/book-5.png" alt="book-5">
+          </div>
+          <div class="content">
+            <h3>Популярные книги</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <a href="#" class="btn">В корзину</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./img/book-6.png" alt="book-6">
+          </div>
+          <div class="content">
+            <h3>Популярные книги</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <a href="#" class="btn">В корзину</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./img/book-7.png" alt="book-7">
+          </div>
+          <div class="content">
+            <h3>Популярные книги</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <a href="#" class="btn">В корзину</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./img/book-8.png" alt="book-8">
+          </div>
+          <div class="content">
+            <h3>Популярные книги</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <a href="#" class="btn">В корзину</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./img/book-9.png" alt="book-9">
+          </div>
+          <div class="content">
+            <h3>Популярные книги</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <a href="#" class="btn">В корзину</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./img/book-10.png" alt="book-10">
+          </div>
+          <div class="content">
+            <h3>Популярные книги</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <a href="#" class="btn">В корзину</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div>
+
+  </section>
+
+  <!-- featured section ends -->
+
+  <!-- newsletter section starts -->
+
+  <section class="newsletter">
+
+    <form action="">
+      <h3>Подпишитесь на нашу рассылку</h3>
+      <input type="email" class="box" placeholder="Укажите Ваш email">
+      <input type="submit" class="btn" value="Подписаться">
+    </form>
+
+  </section>
+
+  <!-- newsletter section ends -->
+
+  <!-- arrivals section starts -->
+
+  <section class="arrivals" id="arrivals">
+    <h1 class="heading"><span>Новые поступления</span></h1>
+
+    <div class="swiper arrivals-slider">
+
+      <div class="swiper-wrapper">
+
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./img/book-1.png" alt="book-1">
+          </div>
+          <div class="content">
+            <h3>Новые поступления</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./img/book-2.png" alt="book-2">
+          </div>
+          <div class="content">
+            <h3>Новые поступления</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./img/book-3.png" alt="book-3">
+          </div>
+          <div class="content">
+            <h3>Новые поступления</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./img/book-4.png" alt="book-4">
+          </div>
+          <div class="content">
+            <h3>Новые поступления</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./img/book-5.png" alt="book-5">
+          </div>
+          <div class="content">
+            <h3>Новые поступления</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+      <div class="swiper-wrapper">
+
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./img/book-6.png" alt="book-6">
+          </div>
+          <div class="content">
+            <h3>Новые поступления</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./img/book-7.png" alt="book-7">
+          </div>
+          <div class="content">
+            <h3>Новые поступления</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./img/book-8.png" alt="book-8">
+          </div>
+          <div class="content">
+            <h3>Новые поступления</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./img/book-9.png" alt="book-9">
+          </div>
+          <div class="content">
+            <h3>Новые поступления</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./img/book-10.png" alt="book-10">
+          </div>
+          <div class="content">
+            <h3>Новые поступления</h3>
+            <div class="price">399 руб. <span>599 руб.</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- arrivals section ends -->
+
+  <!-- deal section starts -->
+
+  <section class="deal">
+
+    <div class="content">
+      <h3>Предложение дня</h3>
+      <h1>Скидка 50%</h1>
+      <p>Читайте больше с выгодой для себя. Скрытая сила вашего разума. Нерассказанная правда о законе притяжения,
+        которую все скрывают…</p>
+      <a href="#" class="btn">Купить сейчас</a>
+    </div>
+
+    <div class="image">
+      <img src="./img/deal-img.png" alt="Deal book">
+    </div>
+
+  </section>
+
+  <!-- deal section ends -->
+
+  <!-- reviews section starts -->
+
+  <section class="reviews" id="reviews">
+
+    <h1 class="heading"><span>Отзывы клиентов</span></h1>
+
+    <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide box">
+          <img src="./img/pic-1.png" alt="Photo 1">
+          <h3>Иван И.</h3>
+          <p>Удобно расположен. В шаговой доступности от метро. Большой выбор книг. Самый большой федеральный сетевой
+            магазин.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./img/pic-2.png" alt="Photo 2">
+          <h3>Дарья С.</h3>
+          <p>В магазине большой выбор товаров для себя, в подарок и для творчества. Персонал вежливый, и знает
+            ассортимент магазина.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./img/pic-3.png" alt="Photo 3">
+          <h3>Алексей Ф.</h3>
+          <p>Персонал очень хороший. Если что, помогут, подскажут товар. Скидки бывают очень часто. Достаточно чисто и
+            комфортно.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./img/pic-4.png" alt="Photo 4">
+          <h3>Екатерина Л.</h3>
+          <p>Уютный магазинчик, очень милые девушки, посоветовали хорошего автора.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./img/pic-5.png" alt="Photo 5">
+          <h3>Николай К.</h3>
+          <p>Книжный магазин с огромным выбором, также кроме книг можно приобрести интересные канцелярские товары,
+            наборы для творчества.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./img/pic-6.png" alt="Photo 6">
+          <h3>Ирина Е.</h3>
+          <p>Хороший магазин, можно найти почти любую книгу, кроме книг разнообразие канцтоваров, разных аксессуаров,
+            игрушек и прочего. Всегда есть что выбрать для подарка.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- reviews section ends -->
+
+  <!-- blogs section starts -->
+
+  <section class="blogs" id="blogs">
+
+    <h1 class="heading"><span>БукБлог</span></h1>
+
+    <div class="swiper blogs-slider">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide box">
+          <div class="image">
+            <img src="./img/blog-1.png" alt="Blog 1">
+          </div>
+          <div class="content">
+            <h3>Главные книги месяца</h3>
+            <p>Вжух, и ещё один месяц остался позади. Но это совсем не повод для грусти, а причина подвести итоги.
+              Какими новинками, книжными событиями и долгожданными экранизациями отметился прошедший месяц?</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <div class="image">
+            <img src="./img/blog-2.png" alt="Blog 2">
+          </div>
+          <div class="content">
+            <h3>10 книг успешного предпринимателя</h3>
+            <p>Современный предприниматель должен обладать множеством разных компетенций – от умения продать кому угодно
+              что угодно до способности предвидеть экономические кризисы.</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <div class="image">
+            <img src="./img/blog-3.png" alt="Blog 3">
+          </div>
+          <div class="content">
+            <h3>Не ешь, подумай: о чём манга «Магическая битва»</h3>
+            <p>«Магическая битва» стала одной из самых продаваемых серий манги в Японии, а ещё на её основе сняли аниме
+              и полнометражный фильм. Но обо всём по порядку.</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <div class="image">
+            <img src="./img/blog-4.png" alt="Blog 4">
+          </div>
+          <div class="content">
+            <h3>10 фэнтезийных новинок, которые перенесут в Азию</h3>
+            <p>Азиатское фэнтези захватило мир, и мы понимаем, почему. Атмосфера древнего Китая, красоты чарующей Кореи
+              и традиции мистической Японии переплетаются в нашей подборке.</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <div class="image">
+            <img src="./img/blog-5.png" alt="Blog 5">
+          </div>
+          <div class="content">
+            <h3>Что такое Таро и как карты стали трендом</h3>
+            <p>Таро – это система карт, каждая из которых обладает своим значением и помогает лучше понять прошлое,
+              настоящее и будущее.</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- blogs section ends -->
+
+  <!-- footer section starts -->
+
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Наши магазины</h3>
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Москва</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Санкт-Петербург</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Новосибирск</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Екатеринбург</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Казань</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Нижний Новгород</a>
+      </div>
+
+      <div class="box">
+        <h3>Навигация</h3>
+        <a href="#"><i class="fas fa-arrow-right"></i> Домой</a>
+        <a href="#"><i class="fas fa-arrow-right"></i> Популярные</a>
+        <a href="#"><i class="fas fa-arrow-right"></i> Поступления</a>
+        <a href="#"><i class="fas fa-arrow-right"></i> Отзывы</a>
+        <a href="#"><i class="fas fa-arrow-right"></i> Блог</a>
+      </div>
+
+      <div class="box">
+        <h3>Дополнительно</h3>
+        <a href="#"><i class="fas fa-circle-info"></i> О компании</a>
+        <a href="#"><i class="fas fa-circle-info"></i> Вопросы и ответы</a>
+        <a href="#"><i class="fas fa-circle-info"></i> Конфиденциальность</a>
+        <a href="#"><i class="fas fa-circle-info"></i> Способы оплаты</a>
+        <a href="#"><i class="fas fa-circle-info"></i> Наши услуги</a>
+      </div>
+
+      <div class="box">
+        <h3>Контакты</h3>
+        <a href="#"><i class="fas fa-phone"></i> +7 (915) 123-45-67</a>
+        <a href="#"><i class="fas fa-phone"></i> +7 (916) 765-43-21</a>
+        <a href="#"><i class="fas fa-envelope"></i> bukmag@gmail.com</a>
+        <img src="./img/map.png" alt="Map" class="map">
+      </div>
+
+    </div>
+
+    <div class="share">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-vk"></i></a>
+    </div>
+
+    <div class="credit">
+      Реализовано <a href="https://github.com/lafeen-html" target="_blank"><span>lafeen-html</span></a> | Все права не
+      защищены &#128578;
+    </div>
+
+  </section>
+
+  <!-- footer section ends -->
+
+  <!-- loader -->
+
+  <div class="loader-container">
+    <img src="./img/loader-img.gif" alt="Loader book">
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

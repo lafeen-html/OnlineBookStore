@@ -1,0 +1,86 @@
+.home {
+  background: url(/img/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.home .row .content {
+  flex: 1 1 42rem;
+}
+
+.home .row .books-slider {
+  flex: 1 1 42rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home .row .books-slider a img {
+  height: 14.5rem;
+}
+
+.home .row .books-slider a:hover img {
+  transform: scale(.9);
+}
+
+.home .row .books-slider .stand {
+  width: 100%;
+  margin-top: -4.5rem;
+}
+
+.home .row .content h3 {
+  color: var(--black);
+  font-size: 4rem;
+}
+
+.home .row .content h4 {
+  color: var(--black);
+  font-size: 3.5rem;
+}
+
+.home .row .content p {
+  color: var(--light-black);
+  font-size: 1.4rem;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+@media (max-width: 984px) {
+  .home .row .books-slider .stand {
+    margin-top: -7rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .home .row .content {
+    text-align: center;
+  }
+
+  .home .row .content h3  {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 984px) {
+  .home .row .books-slider a img {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 658px) {
+  .home .row .books-slider a img {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .home .row .books-slider a img {
+    margin-bottom: 3rem;
+  }
+}

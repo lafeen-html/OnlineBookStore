@@ -1,0 +1,48 @@
+.blogs .blogs-slider .box {
+  margin: 2rem 0;
+  border: var(--border);
+  height: auto;
+}
+
+.blogs .blogs-slider .box:hover {
+  border: var(--border-hover);
+}
+
+.blogs .blogs-slider .box .image {
+  height: 19rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blogs .blogs-slider .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blogs .blogs-slider .box:hover .image img {
+  transform: scale(1.1);
+}
+
+.blogs .blogs-slider .box .content {
+  padding: 1.5rem;
+}
+
+.blogs .blogs-slider .box .content h3 {
+  color: var(--black);
+  font-size: 2rem;
+}
+
+.blogs .blogs-slider .box .content p {
+  color: var(--light-black);
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  line-height: 2;
+  margin-bottom: 5rem;
+}
+
+.blogs .blogs-slider .box .content a {
+  position: absolute;
+  margin: 1rem 0;
+  bottom: 1rem;
+}

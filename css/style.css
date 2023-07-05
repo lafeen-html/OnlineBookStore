@@ -1,0 +1,119 @@
+@import url("./imports.css");
+
+:root {
+  --color: #00aee1;
+  --dark-color: #009afb;
+  --white: #fff;
+  --light-black: #666;
+  --black: #444;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  transition: width none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  background: var(--color);
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: var(--dark-color);
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.heading {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.1rem;
+  background: rgba(0, 0, 0, 0.1);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.heading span {
+  font-size: 3rem;
+  padding: 0.5rem 2rem;
+  color: var(--black);
+  background: var(--white);
+  border: var(--border);
+}
+
+@media (max-width: 1150px) {
+  html {
+    font-size: 55%;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 880px) {
+  html {
+    font-size: 50%;
+    scroll-padding-top: 0;
+  }
+
+  body {
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
