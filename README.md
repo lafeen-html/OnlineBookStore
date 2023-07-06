@@ -15,3 +15,6 @@
 <br>
 <img src="/listing/Screenshot_4.jpg" />
 <h3 align="center">Листинг 4 - Форма авторизации</h3>
+<br>
+<img src="/listing/Screenshot_5.jpg" />
+<h3 align="center">Листинг 5 - Версия для небольшого экрана</h3>
