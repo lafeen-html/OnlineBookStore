@@ -33,7 +33,7 @@ function loader() {
 }
 
 function fadeOut() {
-  setTimeout(loader, 2500);
+  setTimeout(loader, 2000);
 }
 
 loginBtn.onclick = () => {
